@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notepad</title>
+</head>
+<body>
+
+<div class="Web-name"> NotePad </div>
+
+<!----LOGIN---->    
+<div id='login-form' class='login-page'>
+    <div class="container">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="reset" class="toggle-btn">Inicio de sesión</button>
+            <button type="submit" class="toggle-btn">Registro</button>
+        </div>
+            <form autocomplete="off" action="confirmación.html" id="login" class="input-group-login">
+                <div class="title"> Inicio de sesión </div>
+                    <div class="datos-usuario">
+                        <div class="input-box">
+                                <div>
+                                    <label for="usuario">Usuario</label>
+                                    <input type= "text" name="usuario" id="usuario" placeholder="Usuario" required> 
+                                </div>
+                                <div>
+                                    <label for="contraseña">Contraseña</label>
+                                    <input type= "password" name="contraseña" id="contraseña" placeholder="Contraseña" required> 
+                                </div>
+                        </div>
+                    
+                    </div>    
+                    <button type="submit" class="btn" >
+                        <span class="text">Siguiente</span>
+                    </button>   
+            </form>
+             <!----REGISTRO----> 
+ <div id='registro-form' class='registro-page'>
+        <form autocomplete="off" action="confirmación.html" id="registro" class="input-group-register">
+            <div class="title"> Registro </div>
+                <div class="datos-usuario">
+                    <div class="input-box">
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type= "text" name="nombre" id="nombre" placeholder="Nombre" required> 
+                            </div>
+                            <div>
+                                <label for="apellidoP">Apellido paterno</label>
+                                <input type= "text" name="apellido" id="apellidoP" placeholder="Apellido Paterno" required>    
+                            </div>
+                            <div>
+                                <label for="apellidoP">Apellidos mtaerno</label>
+                                <input type= "text" name="apellido" id="apellidoM" placeholder="Apellido Materno" required>
+                            </div>
+                            <div>
+                                <label for="fechaNac">Fecha de nacimiento</label>
+                                <input type= "date" name="fechaNac" id="fechaNac"> 
+                            </div>
+                    </div>
+                    <div class="input-box">
+                            <div>
+                                <label for="foto">Foto de perfil</label>
+                                <input type= "file" name="foto" id="foto"> 
+                            </div>
+                            <div>
+                                <label for="correo">Correo electrónico</label>
+                                <input type= "email" name="correo" id="correo" placeholder="example@gmail.com" required> 
+                            </div>
+                            <div>
+                                <label for="contraseña">Contraseña</label>
+                                <input type= "password" name="contraseña" id="contraseña" placeholder="Contraseña" required> 
+                            </div>
+                            <div>
+                                <label for="contraseñaV">Confirmar contraseña</label>
+                                <input type= "password" name="contraseñaV" id="contraseñaV" placeholder="Contraseña" required> 
+                            </div>
+                        </div>
+                </div>    
+                <button type="reset" class="btn">Resetear</button>
+                <button type="submit" class="btn">Siguiente</button>
+            
+        </form>
+  
+</div>
+        
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
