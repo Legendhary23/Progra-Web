@@ -1,3 +1,6 @@
+#register{
+  display:none;
+}
 
 body {
     margin: 0;
@@ -12,28 +15,39 @@ body {
     align-items: center;
 
 
-     height: 100%;
+     height: 100vh;
      width: 100%;
      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(note.jpg);
      background-size: cover;
     
   }
 
-  
+
   .Web-name {
     font-size: 150px;
     font-weight: 560;
     text-align: justify;
     color: #fff;
+    margin: 50% 0;
+  }
+  
+  .container {
+    margin:30px;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  
   }
 
 .button-box{
   width: 520px;
   margin: 35px auto;
   position: relative;
-  box-shadow: 0 0 20px 9px rgb(126, 126, 126);
   border-radius: 30px;
-
 }
 
 .toggle-btn{
@@ -46,21 +60,23 @@ body {
   text-align: center;
   font-size: 27px;
   font-weight: 560;
+  position:relative;
+  
 }
 
+#btnn{
+  top:0;
+  left:0;
+  position:absolute;
+  width: 250px;
+  height: 90%;
+  background: transparent;
+  border: 4px solid #ffffff;
+  border-radius: 30px;
+  transition: 0.5s;
+}
 
-
-  
-  .container {
-    margin:30px;
-    max-width: 700px;
-    width: 100%;
-    background: rgba(0,0,0,0.3);
-    padding: 25px 30px;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-  }
+ 
   
   .container .title {
     color: #fff;
@@ -68,31 +84,38 @@ body {
     font-weight: 560;
   }
   
-  .container form .datos-usuario {
+ .input-box {
     color: #fff;
-    display: flex;
     justify-content:space-between;
    
   }
 
- form .datos-usuario .input-box{
+ .input-group .input-box{
      width: calc(100%/2-20px);
      margin: 25px ;
+   
+   
  }
 
- .datos-usuario .input-box input {
-        margin-bottom: 20px;
-        height: 45px;
+ .input-group .input-box input {
         width: 100%;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        padding-left: 15px;
-        font-size: 16px;
-        border-bottom-width: 4px;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+        color: #fff;
+ }
+
+ ::placeholder{
+  color: rgb(146, 146, 146);
+  font-size: 15px;
  }
 
 .btn{
-  
   height: 45px;
   width: 180px;
   background: rgba(0,0,0,0.3);
@@ -116,8 +139,10 @@ body {
 
 
 
+
+
 form .datos-usuario .input-correct{
-  color: rgb(22, 163, 69);
+  color: rgb(255, 255, 255);
   font-size: 27px;
   font-weight: 360;
   width: calc(100%/2-20px);

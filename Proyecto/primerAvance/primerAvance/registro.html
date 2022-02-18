@@ -11,17 +11,16 @@
 
 <div class="Web-name"> NotePad </div>
 
-<!----LOGIN---->    
-<div id='login-form' class='login-page'>
-    <div class="container">
+<div class="container">
         <div class="button-box">
-            <div id="btn"></div>
-            <button type="reset" class="toggle-btn">Inicio de sesión</button>
-            <button type="submit" class="toggle-btn">Registro</button>
+            <div id="btnn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Inicio de sesión</button>
+            <button type="button" class="toggle-btn" onclick="register()">Registro</button>
         </div>
-            <form autocomplete="off" action="confirmación.html" id="login" class="input-group-login">
-                <div class="title"> Inicio de sesión </div>
-                    <div class="datos-usuario">
+  <!---------------------------------------------------------------------------------------LOGIN---------------------------------------------------------------------> 
+  <div class="container-login">
+            <form autocomplete="off" action="confirmación.html" id="login" class="input-group">
+              
                         <div class="input-box">
                                 <div>
                                     <label for="usuario">Usuario</label>
@@ -32,17 +31,15 @@
                                     <input type= "password" name="contraseña" id="contraseña" placeholder="Contraseña" required> 
                                 </div>
                         </div>
-                    
-                    </div>    
+
                     <button type="submit" class="btn" >
                         <span class="text">Siguiente</span>
                     </button>   
             </form>
-             <!----REGISTRO----> 
- <div id='registro-form' class='registro-page'>
-        <form autocomplete="off" action="confirmación.html" id="registro" class="input-group-register">
-            <div class="title"> Registro </div>
-                <div class="datos-usuario">
+    </div>
+   <!---------------------------------------------------------------------------------------REGISTRO---------------------------------------------------------------------> 
+   <div class="container-register">
+        <form autocomplete="off" action="confirmación.html" id="register" class="input-group">
                     <div class="input-box">
                             <div>
                                 <label for="nombre">Nombre</label>
@@ -79,20 +76,36 @@
                                 <input type= "password" name="contraseñaV" id="contraseñaV" placeholder="Contraseña" required> 
                             </div>
                         </div>
-                </div>    
+             
                 <button type="reset" class="btn">Resetear</button>
                 <button type="submit" class="btn">Siguiente</button>
             
         </form>
-  
-</div>
-        
     </div>
-</div>
+    </div>
 
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btnn");
 
+        function register(){
+            var mostar= document.getElementById("register").style.display="block";
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="260px"
+            var ocultar= document.getElementById("login").style.display = "none";
+           
+        }
 
-
+        function login(){
+            var mostar= document.getElementById("login").style.display="block";
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px"
+            var ocultar= document.getElementById("register").style.display = "none";
+        }
+    </script>
 
 </body>
 </html>
